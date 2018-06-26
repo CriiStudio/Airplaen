@@ -7,6 +7,7 @@
 
 
 local data = {
+	["Fuel"] = 0.567
 	["Airports"] = {
 		["ATL"] = {"Atlanta Airport","Georgia","US","NA",100000000,-0.3},
 		["PEK"] = {"Beijing Airport","TR","China","A",96000000,1.5},

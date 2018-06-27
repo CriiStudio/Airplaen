@@ -1,6 +1,34 @@
 
 
+--[[
+	#######################
+	WELCOME TO AIRPLAEN.LUA
+	#######################
+	Airplaen is a small airplane/airport database in the form of a lua module.
+	
+	HOW TO USE:
+	["Fuel"] = Price of one kilogram of fuel
 
+	["Airports"] = List of airports
+		["3-DIDGIT AIRPORT CODE"] = {"Airport Name", "State/Area","Country","Continent (Abbreviation)",TOTAL passengers per year, Percent change (passengers) per year}
+
+	["AirportsConcat"] = {"PUT ALL 3-DIDGIT AIRPORT CODES HERE FOR EASIER CONCAT ABILITIES"}
+
+	["Airplanes"] = Table of airplanes
+		["AIRPLANE NAME ABBREVIATION"] = {"Airplane Name",{"List Of Models (for concat)"}, Table for models
+			["MODEL NAME"] = Hub for model
+				["Sections"] = {List sections in table form BY SQUARE METERS}
+				["Fuel"] = Kilograms MAX fuel, Kilometers per hour, Range (max distance for full tank)
+				Price (number, no commas)
+
+	
+
+
+
+
+
+
+--]]
 
 
 
@@ -20,7 +48,7 @@ local data = {
 		["PVG"] = {"Shanghai Pudong Airport", "MR", "China","A",70000000,6.1},
 		
 	},
-	{"PC","ATL","PEK","DXB","HND","LAX","ORD","LHR","HKG","PVG"},
+	["AirportsConcat"] = {"PC","ATL","PEK","DXB","HND","LAX","ORD","LHR","HKG","PVG"},
 	["Airplanes"] = {
 		["EEJ"] = {"Embraer E-Jet",{"195"}, {
 			["195"] = {
